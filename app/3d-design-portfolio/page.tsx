@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { ArrowLeft, Calendar, Clock, Wrench, Cog, Settings, Zap, Car, Building, Target } from "lucide-react"
+import { ArrowLeft, Calendar, Clock, Wrench, Cog, Settings, Building, Target } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -113,7 +113,7 @@ export default function ThreeDDesignPortfolio() {
       {/* Projects Section */}
       <section className="container pb-24">
         <div className="space-y-12">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <Card key={project.id} className="overflow-hidden">
               <div className="grid gap-6 lg:grid-cols-[1fr_400px]">
                 {/* Project Images */}
@@ -207,7 +207,7 @@ export default function ThreeDDesignPortfolio() {
                 More Projects Coming Soon
               </CardTitle>
               <CardDescription>
-                I'm constantly working on new designs and will be adding more projects to this portfolio.
+                I&apos;m constantly working on new designs and will be adding more projects to this portfolio.
               </CardDescription>
             </CardHeader>
             <CardContent>

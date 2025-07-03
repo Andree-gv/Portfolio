@@ -135,7 +135,7 @@ export default function SolidWorksPortfolio() {
       {/* Projects Section */}
       <section className="container pb-24">
         <div className="space-y-12">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <Card key={project.id} className="overflow-hidden">
               <div className="grid gap-6 lg:grid-cols-[1fr_400px]">
                 {/* Project Images */}
@@ -229,7 +229,7 @@ export default function SolidWorksPortfolio() {
                 More Projects Coming Soon
               </CardTitle>
               <CardDescription>
-                I'm constantly working on new designs and will be adding more projects to this portfolio.
+                I&apos;m constantly working on new designs and will be adding more projects to this portfolio.
               </CardDescription>
             </CardHeader>
             <CardContent>

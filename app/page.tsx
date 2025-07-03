@@ -12,10 +12,6 @@ import {
   Download,
   Wrench,
   Cog,
-  Zap,
-  Car,
-  Building,
-  Cpu,
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -98,7 +94,7 @@ export default function Portfolio() {
                 Mechanical Engineering Student & 3D Printing Specialist
               </h2>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                I'm Andree Gonzalez, a sophomore mechanical engineering student at BYU–Idaho. I enjoy tackling
+                I&apos;m Andree Gonzalez, a sophomore mechanical engineering student at BYU–Idaho. I enjoy tackling
                 real-world problems by combining creative thinking with tools like CAD and simulation software to
                 develop practical solutions.
               </p>
@@ -253,9 +249,9 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section id="contact" className="container py-24 md:py-32">
         <div className="mx-auto max-w-[800px] text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Let's Work Together</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Let&apos;s Work Together</h2>
           <p className="mt-4 text-muted-foreground md:text-xl">
-            Ready to bring your mechanical engineering project to life? Let's discuss how we can collaborate.
+            Ready to bring your mechanical engineering project to life? Let&apos;s discuss how we can collaborate.
           </p>
         </div>
 
