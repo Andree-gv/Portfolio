@@ -46,27 +46,9 @@ export default function ThreeDDesignPortfolio() {
         "Created technical drawings and assembly guide for fabrication and user use"
       ],
       tools: ["SolidWorks", "Laser cut"],
-      images: ["/images/laptop.jpeg","/images/laptop-base.jpeg?height=300&width=400","/images/laptop-support.jpeg?height=300&width=400"
+      images: ["/images/laptop.jpeg","/images/laptop-base.jpeg","/images/laptop-support.jpeg"
       ],
       icon: <Cog className="w-6 h-6" />,
-    },
-    {
-      id: 3,
-      title: "Helical gear",
-      category: "3d designing",
-      duration: "2 weeks",
-      date: "September 2024",
-      description: "A personal project focused on designing an efficient helical gear for optimal strength and performance.",
-      process: [
-      "Researched helical gear applications and performance characteristics",
-      "Compared various gear profiles to select the most suitable for load and speed requirements",
-      "Modeled the gear in CAD with precise helix angle and tooth geometry",
-      "Ran FEA simulations to analyze stress distribution and contact patterns",
-      "Refined design based on simulation results and gear meshing analysis"
-      ],
-      tools: ["SolidWorks"],
-      images: ["/images/h-gear.jpeg?height=400&width=600", "/images/Gear-technical-drawing.jpeg?height=300&width=400"],
-      icon: <Settings className="w-6 h-6" />,
     },
   ]
 
