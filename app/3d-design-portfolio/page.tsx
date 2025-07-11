@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { ArrowLeft, Calendar, Clock, Wrench, Cog, Settings, Building, Target } from "lucide-react"
+import { ArrowLeft, Calendar, Clock, Wrench, Cog, Building, Target } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
