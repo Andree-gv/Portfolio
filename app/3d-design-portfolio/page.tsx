@@ -46,7 +46,7 @@ export default function ThreeDDesignPortfolio() {
         "Created technical drawings and assembly guide for fabrication and user use"
       ],
       tools: ["SolidWorks", "Laser cut"],
-      images: ["/images/laptop.jpeg","/images/laptop-base.jpeg","/images/laptop-support.jpeg"
+      images: ["/images/laptop.jpeg", "/images/Laptop-base.jpeg?height=600&width=600", "/images/Laptop-support.jpeg?height=600&width=600"
       ],
       icon: <Cog className="w-6 h-6" />,
     },
