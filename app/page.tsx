@@ -15,6 +15,7 @@ import {
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { text } from "stream/consumers"
 
 export default function Portfolio() {
   const skills = [
@@ -74,10 +75,13 @@ export default function Portfolio() {
             </Link>
           </nav>
           <div className="ml-auto flex items-center space-x-2">
-            <Button variant="outline" size="sm">
-              <Download className="mr-2 h-4 w-4" />
-              Resume
-            </Button>
+            <a href="/resume.pdf"
+              download="Andree-Gonzalez-Resume.pdf">
+              <Button variant="outline" size="sm">
+                <Download className="mr-2 h-4 w-4" />
+                Resume
+              </Button>
+            </a>
           </div>
         </div>
       </header>
@@ -100,7 +104,7 @@ export default function Portfolio() {
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Link href="mailto:andree.vgv1@gmail.com">
+              <Link href="mailto:andree.vgv1@gmail.com" target="_blank">
                 <Button size="lg">
                   <Mail className="mr-2 h-4 w-4" />
                   Get In Touch
@@ -119,7 +123,7 @@ export default function Portfolio() {
               >
                 <LinkedIn className="h-5 w-5" />
               </Link>
-              <Link href="mailto:andree.vgv1@gmail.com" className="text-muted-foreground hover:text-foreground">
+              <Link href="mailto:andree.vv1@gmail.com" className="text-muted-foreground hover:text-foreground">
                 <Mail className="h-5 w-5" />
               </Link>
             </div>
