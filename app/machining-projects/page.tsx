@@ -27,7 +27,7 @@ export default function MachiningProjects() {
         "Achieved ±0.001 tolerance on key features",
       ],
       tools: ["CNC Mill", "KURT Vise", "Precision Measuring Tools", "CAM Software"],
-      images: ["/images/machining-projects.jpeg"],
+      images: ["/images/machining-projects.jpg","/images/cnccube.gif"],
       icon: <Drill className="w-6 h-6" />,
     },
     {
