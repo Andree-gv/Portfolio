@@ -15,7 +15,6 @@ import {
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { text } from "stream/consumers"
 
 export default function Portfolio() {
   const skills = [
@@ -56,11 +55,12 @@ export default function Portfolio() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-14 items-center">
+        <div className="container flex h-14 items-center ml-4">
           <div className="mr-4 flex">
             <Link href="/" className="mr-6 flex items-center space-x-2">
               <Wrench className="h-6 w-6" />
-              <span className="font-bold">Andree Gonzalez Villegas</span>
+              <span className="font-bold hidden md:inline-block">Andree Gonzalez Villegas</span>
+              <span className="font-bold inline-block md:hidden">Andree</span>
             </Link>
           </div>
           <nav className="flex items-center space-x-6 text-sm font-medium">
@@ -74,7 +74,7 @@ export default function Portfolio() {
               Contact
             </Link>
           </nav>
-          <div className="ml-auto flex items-center space-x-2">
+          <div className="ml-auto flex items-center space-x-2 hidden sm:flex">
             <a href="/resume.pdf"
               download="Andree-Gonzalez-Resume.pdf">
               <Button variant="outline" size="sm">
@@ -87,7 +87,7 @@ export default function Portfolio() {
       </header>
 
       {/* Hero Section */}
-      <section className="container py-24 md:py-32">
+      <section className="container max-w-[90%] mx-auto py-12 md:py-32">
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
@@ -103,37 +103,37 @@ export default function Portfolio() {
                 develop practical solutions.
               </p>
             </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Link href="mailto:andree.vgv1@gmail.com" target="_blank">
+            <div className="flex flex-row gap-4 min-[400px]:flex-row">
+              <Link href="mailto:andree.vgv1@gmail.com" className="w-fit" target="_blank">
                 <Button size="lg">
                   <Mail className="mr-2 h-4 w-4" />
                   Get In Touch
                 </Button>
               </Link>
-              <Link href="/#projects">
+              <Link href="/#projects" className="w-fit">
                 <Button variant="outline" size="lg">
                   View Projects
                 </Button>
               </Link>
             </div>
-            <div className="flex items-center space-x-4 pt-4">
+            <div className="flex items-center space-x-4 pt-2">
               <Link
                 href="https://www.linkedin.com/in/andree-gonzález-villegas-25051b128"
                 className="text-muted-foreground hover:text-foreground"
               >
-                <LinkedIn className="h-5 w-5" />
+                <LinkedIn className="h-6 w-6" />
               </Link>
               <Link href="mailto:andree.vv1@gmail.com" className="text-muted-foreground hover:text-foreground">
-                <Mail className="h-5 w-5" />
+                <Mail className="h-6 w-6" />
               </Link>
             </div>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="mx-auto flex items-center">
             <Image
               src="/images/profile.jpeg"
-              width="400"
-              height="400"
-              alt="Alex Rodriguez"
+              width="300"
+              height="300"
+              alt="Andree Gonzalez"
               className="aspect-square overflow-hidden rounded-xl object-cover"
             />
           </div>
@@ -141,7 +141,7 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="container py-24 md:py-32">
+      <section id="about" className="container py-10 md:py-32">
         <div className="mx-auto max-w-[800px] text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
         </div>
@@ -218,9 +218,9 @@ export default function Portfolio() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 flex flex-row flex-wrap gap-8 justify-center">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden">
+            <Card key={index} className="overflow-hidden w-[550px]">
               <div className="aspect-video relative">
                 <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
               </div>
