@@ -27,7 +27,7 @@ export default function MachiningProjects() {
         "Achieved ±0.001 tolerance on key features",
       ],
       tools: ["CNC Mill", "KURT Vise", "Precision Measuring Tools", "CAM Software"],
-      images: ["/images/machining-projects.jpg","/images/cnccube.gif"],
+      images: ["/images/aluminum-dice.jpg","/images/machining-projects.jpg","/images/cnccube.gif"],
       icon: <Drill className="w-6 h-6" />,
     },
     {
@@ -51,44 +51,7 @@ export default function MachiningProjects() {
       images: ["/images/clamp1.png", "/images/thread.jpg"],
       icon: <Cog className="w-6 h-6" />,
     },
-    {
-      id: 3,
-      title: "Custom Bracket Fabrication",
-      category: "Manual Machining",
-      duration: "3 days",
-      date: "February 2024",
-      description: "Fabricated a custom mounting bracket using manual mill and drill press operations.",
-      process: [
-        "Interpreted engineering drawings and specifications",
-        "Marked out hole locations using layout tools",
-        "Drilled and tapped holes to specification",
-        "Milled slots and contours using manual mill",
-        "Deburred all edges for safety and appearance",
-        "Performed final inspection and quality check",
-      ],
-      tools: ["Manual Mill", "Drill Press", "Layout Tools", "Tap and Die Set"],
-      images: ["/placeholder.svg?height=400&width=600"],
-      icon: <Settings className="w-6 h-6" />,
-    },
-    {
-      id: 4,
-      title: "Gear Cutting Project",
-      category: "Specialized Machining",
-      duration: "1 week",
-      date: "January 2024",
-      description: "Cut spur gear teeth using gear hobbing machine for mechanical transmission.",
-      process: [
-        "Calculated gear parameters and cutting specifications",
-        "Selected appropriate gear hob and cutting parameters",
-        "Set up blank in gear hobbing machine",
-        "Programmed hobbing cycle with proper indexing",
-        "Monitored cutting process and tool wear",
-        "Inspected gear teeth profile and pitch accuracy",
-      ],
-      tools: ["Gear Hobbing Machine", "Gear Hob", "Gear Measuring Tools", "CMM"],
-      images: ["/placeholder.svg?height=400&width=600"],
-      icon: <Wrench className="w-6 h-6" />,
-    },
+    
   ]
 
   return (
