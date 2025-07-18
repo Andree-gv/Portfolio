@@ -46,7 +46,7 @@ export default function Portfolio() {
         "Hands-on machining experience using CNC and manual equipment to fabricate precision components from engineering designs.",
       technologies: ["CNC Machining", "Precision Manufacturing"],
       icon: <Wrench className="w-6 h-6" />,
-      image: "/images/machining-projects.jpeg",
+      image: "/images/machining-projects.jpg",
       link: "/machining-projects",
     },
   ]
