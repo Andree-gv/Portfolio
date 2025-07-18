@@ -50,6 +50,25 @@ export default function ThreeDDesignPortfolio() {
       ],
       icon: <Cog className="w-6 h-6" />,
     },
+    {
+      id: 2,
+      title: "Helical Gear Design",
+      category: "CAD Design & Simulation",
+      duration: "2 days",
+      date: "June 2024",
+      description: "Designed a custom helical gear for a ASME contest, focused on optimizing gear geometry and strength.",
+      process: [
+        "Calculated optimal gear parameters (module, helix angle, face width) for strength and efficiency",
+        "Modeled gear in SolidWorks with accurate tooth geometry and constraints",
+        "Ran FEA simulations to analyze stress concentration and deflection under load",
+        "Iterated design based on simulation results to improve performance and durability",
+        "Prepared technical drawings and documentation for contest submission",
+      ],
+      tools: ["SolidWorks", "Laser cut"],
+      images: ["/images/gear.jpeg?height=600&width=600", "/images/gear-technical-drawing.jpeg?height=600&width=600"
+      ],
+      icon: <Cog className="w-6 h-6" />,
+    },
   ]
 
   return (
