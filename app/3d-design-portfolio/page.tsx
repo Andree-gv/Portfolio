@@ -48,7 +48,7 @@ export default function ThreeDDesignPortfolio() {
     "Adjusted spring tension and pedal geometry for smooth operation",
           ],
           tools: ["SolidWorks Software", "Prusa 3d Printers", "Hand Tools", "Measuring Instruments"],
-          images: ["</images/Longboard.stopper.mp4"],
+          images: ["<videos/Longboard.stopper.mp4"],
         },
     {
       id: 2,
